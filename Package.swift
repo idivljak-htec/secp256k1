@@ -11,11 +11,9 @@ let package = Package(
         .target(
             name: "secp256k1",
             path: ".",
-            sources: [
-                "src/secp256k1.c",
-            ],
-            publicHeadersPath: "include",
-            cxxSettings: [
+            sources: ["src/secp256k1.c"],
+            publicHeadersPath: "swift-include",
+            cSettings: [
                 .headerSearchPath("src"),
                 .headerSearchPath("."),
                 .define("ENABLE_MODULE_ECDH"),
