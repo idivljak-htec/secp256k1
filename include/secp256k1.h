@@ -706,3 +706,8 @@ SECP256K1_API SECP256K1_WARN_UNUSED_RESULT int secp256k1_ec_pubkey_combine(
 #endif
 
 #endif /* SECP256K1_H */
+
+#include "secp256k1_ecdh.h"
+#include "secp256k1_recovery.h"
+#include "secp256k1_preallocated.h"
+#include "secp256k1_sha256.h"

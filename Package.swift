@@ -12,7 +12,7 @@ let package = Package(
             name: "secp256k1",
             path: ".",
             sources: ["src/secp256k1.c"],
-            publicHeadersPath: "swift-include",
+            publicHeadersPath: "include",
             cSettings: [
                 .headerSearchPath("src"),
                 .headerSearchPath("."),
