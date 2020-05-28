@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage = "https://github.com/greymass/secp256k1"
   s.license = { :type => "MIT", :file => "COPYING" }
   s.author = { "secp256k1 contributors" => "https://github.com/bitcoin-core/secp256k1/graphs/contributors" }
-  s.source = { :git => "https://github.com/greymass/secp256k1.git", :branch => "podspec" }
+  s.source = { :git => "https://github.com/greymass/secp256k1.git", :tag => "0.0.2" }
   s.ios.deployment_target = "12.0"
   s.public_header_files = "include/*.h"
   s.source_files = "src/secp256k1.c", "src/**/*.h", "include/*.h"
