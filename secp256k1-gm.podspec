@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name = "secp256k1"
+  s.name = "secp256k1-gm"
   s.version = "0.0.2"
   s.summary = "Optimized C library for EC operations on curve secp256k1"
   s.homepage = "https://github.com/greymass/secp256k1"
@@ -17,8 +17,8 @@ Pod::Spec.new do |s|
                      "-DUSE_FIELD_10X26",
                      "-DUSE_SCALAR_8X32",
                      "-DECMULT_GEN_PREC_BITS=4",
-                     "-DECMULT_WINDOW_SIZE=15"
+  "-DECMULT_WINDOW_SIZE=15"
   s.xcconfig = {
-    "HEADER_SEARCH_PATHS" => "$(SRCROOT)/secp256k1 $(SRCROOT)/secp256k1/src $(SRCROOT)/secp256k1/include",
+    "HEADER_SEARCH_PATHS" => "$(SRCROOT)/secp256k1-gm $(SRCROOT)/secp256k1-gm/src $(SRCROOT)/secp256k1-gm/include",
   }
 end
